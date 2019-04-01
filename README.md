@@ -15,3 +15,18 @@ The overall accuracy I was able to attain was just over 50% in both the test and
 * [Jupyter Notebook Output](http://htmlpreview.github.io/?https://github.com/hashfunction/deeplearning_sonar/blob/master/Audio_Echo_Detection.html)
 * [Jupyter Notebook](Audio_Echo_Detection.ipynb)
 * [Sample Data](data/)
+
+### Further steps and investigations
+
+From the analysis above, its clear that the data is not of very high quality and the S/N ratio is quite low. This is why its so hard for the network to pick up anything resembling an accuracy > 50%. Looking at the audio samples here also illustrates this point as some samples in different classes are not easy to recognize manually and there are many differences and hence a much larger training set would be required.
+
+Some next steps are outlined below. 
+
+* Gather better quality data to tease out the best model for this problem. Perhaps smaller samples in an LSTM would yield better results. 
+* Gather more data and carve out a test set to verify against. This will give us a better gauge of the effectiveness of the model. 
+* Look at the failed cases in more detail and see if we can spot the issues there.
+* Remove the original chirp from the data so we are feeding the network less noise.
+* Experiment with some blurring/averaging techniques to see if that can bring out the signal better.
+* Use a different mic. This was captured with a ps3 eye toy 4 microphone array with low fidelity. 
+* Try different waveforms for the chirp to see if perhaps different frequencies yield better results.
+* I am also curious about how general this trained model is to variations in ambient noise. 
