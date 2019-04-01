@@ -12,6 +12,6 @@ The overall accuracy I was able to attain was just over 50% in both the test and
 
 ## Assets
 
-[Jupyter Notebook Output](Audio_Echo_detection.html)
-[Jupyter Notebook](Audio_Echo_detection.ipynb)
-[Sample Data](data/)
+* [Jupyter Notebook Output](Audio_Echo_detection.html)
+* [Jupyter Notebook](Audio_Echo_detection.ipynb)
+* [Sample Data](data/)
